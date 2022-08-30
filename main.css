@@ -1,16 +1,15 @@
-<html>
-<head>
-    <title>Christian Lakey</title>
-
-
-
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    
-    <h1>Hi. My Name is Christian</h1>
-    <p>Thank you for visiting my site!</p>
-    
-     
-</body>
-</html> 
+html {
+    margin: 20px;
+    background-color:red
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+}
