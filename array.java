@@ -1,17 +1,5 @@
 public class array {
-    static int sumOfArray(int arr[])
-    {
-        // initialise sum to 0
-        int sum = 0;
-        
-        // iterate through the array using loop
-        for (int i = 101; i < arr.length; i++) {
-            sum = sum + arr[i];
-        }
-  
-        // return sum as the answer
-        return sum;
-    }
+   
     public static void main(String[] args) {
        
         int[] arr;
@@ -25,8 +13,6 @@ public class array {
         
         
         }
-        { System.out.println(
-            "The sum of elements of given array is: "
-            + sumOfArray(arr));}
+       
     }
 }
