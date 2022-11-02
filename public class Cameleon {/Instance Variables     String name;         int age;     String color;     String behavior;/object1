@@ -1,0 +1,67 @@
+public class Cameleon
+{
+    // Instance Variables
+    String name;
+   
+    int age;
+    String color;
+    String behavior;
+ 
+    // Constructor Declaration of Class
+    public Cameleon(String name, 
+                   int age, String color, String behavior)
+    {
+        this.name = name;
+       
+        this.age = age;
+        this.color = color;
+        this.behavior=behavior;
+    }
+ 
+   
+    public String getName()
+    {
+        return name;
+    }
+ 
+   
+ 
+    public int getAge()
+    {
+        return age;
+    }
+ 
+    public String getColor()
+    {
+        return color;
+    }
+   
+    @Override
+    public String toString()
+    {
+        return(this.getName()+
+               "," + this.getAge()+
+               ","+ this.getColor());
+
+
+    }
+ 
+    public static void main(String[] args)
+    {
+        Cameleon scales = new Cameleon("scales",
+         5, 
+         "white",
+         "mad");
+         System.out.println(scales.toString());
+         Cameleon lion = new Cameleon("lion",
+         5, 
+         "white",
+         "mad");
+         System.out.println(lion.toString());
+         Cameleon tails = new Cameleon("Tails",
+         5, 
+         "white",
+         "mad");
+        System.out.println(tails.toString());
+    }
+}
