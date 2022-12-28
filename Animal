@@ -1,0 +1,36 @@
+class Animal {
+    public void greeting() {
+      System.out.println("Bob The animal says hello while shaking your hand.");
+
+    }
+  }
+  
+  // Child classes
+  class Matt extends Animal {
+    public void greeting() {
+      System.out.println("Matt the Cat Meows hello while nuzzling your hand.");
+    }
+  }
+  class Rat extends Matt {
+    public void greeting(){
+      System.out.println("Rat The Cat yawns hello while licking your hand");
+    }
+  }
+
+   class Walter extends Rat {
+    public void greeting(){
+      System.out.println("Walter The Cat purrs hello while biting your hand");
+    }
+  }
+  class MainClass {
+    public static void main(String[] args) {
+      Animal animal1 = new Animal();  // Animal object
+      Animal Kat1 = new Matt();  // Cat child object
+      Animal Kat2 = new Rat();//cat child object 
+      Animal Kat3 = new Walter();//Cat child object
+      animal1.greeting(); // prints "The animal says Hello"
+      Kat1.greeting(); // prints "The Rat Says Hello."
+      Kat2.greeting();
+      Kat3.greeting();
+    }
+  }
