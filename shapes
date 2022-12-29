@@ -1,0 +1,29 @@
+class Shapes {
+    public void length() {
+      System.out.println("Find the length ");
+    }
+  public void length(int a) {
+      System.out.println("rombus length = "+4*a );
+    }
+  
+  public void length( double n ) {
+      System.out.println("square area="+n*4);
+    }
+  public void length(int l, int b) {
+      System.out.println("Rectangle area="+l+l+b+b);
+    }
+  
+  
+  }
+  
+  class Main {
+    public static void main(String[] args) {
+      Shapes Shapes = new Shapes();  // Create a Shapes object
+      
+      Shapes.length();
+      Shapes.length(12);
+      Shapes.length(6.30);
+      Shapes.length(70,80);
+      
+    }
+  }
