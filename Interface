@@ -1,0 +1,41 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+class Cat implements Comparable<Cat>{    
+       
+    String name;    
+    int age;    
+    Cat(String name,int age){  
+    this.name=name;    
+    this.age=age;    
+    }    
+        
+    public int compareTo(Cat st){    
+    if(age==st.age)    
+    return 0;    
+    else if(age<st.age)    
+    return 1;    
+    else    
+    return -1;    
+    }    
+    }    
+class test{    
+public static void main(String args[]){    
+ArrayList<Cat> al=new ArrayList<Cat>();    
+al.add(new Cat("Dragon",30000));    
+al.add(new Cat("Raymen",207));    
+al.add(new Cat("Boots",24)); 
+al.add(new Cat("Jade",38));   
+al.add(new Cat("Walter",37));   
+al.add(new Cat("Rombus",21));   
+al.add(new Cat("Carter",52));   
+al.add(new Cat("Maya",67));   
+al.add(new Cat("Jay",83));   
+al.add(new Cat("lockland",92));      
+    
+Collections.sort(al);    
+for(Cat st:al){    
+System.out.println(st.name+" "+st.age);    
+}    
+}    
+}    
