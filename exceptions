@@ -1,0 +1,37 @@
+class ArithmeticException_Demo
+{
+    public static void main(String args[])
+    {
+        try {
+            int d = 30, g = 0;
+            int c = d/g;  // cannot divide by zero
+            System.out.println ("Result = " + c);
+        }
+        catch(ArithmeticException e) {
+            System.out.println ("It does not work you can not divide by zero");
+            
+        }
+        System.out.println ("you hit try again");
+        try {
+            int a = 20, b = 0;
+            int c = a/b;  // cannot divide by zero
+            System.out.println ("Result = " + c);
+        }
+        catch(ArithmeticException e) {
+            System.out.println ("stop trying it does not work");
+            
+        }
+        System.out.println ("you hit try again");
+        try {
+            int m = 30, n = 0;
+            int c = m/n;  // cannot divide by zero
+            System.out.println ("Result = " + c);
+        }
+        catch(ArithmeticException e) {
+            System.out.println ("I told you once I told you one thousands times your done im shutting down");
+            
+        }
+
+     }
+
+    }
