@@ -9,7 +9,7 @@ class Cat implements Comparable<Cat>{
     this.name=name;    
     this.age=age;    
     }    
-        
+        //this sorts the cats by age
     public int compareTo(Cat st){    
     if(age==st.age)    
     return 0;    
@@ -18,7 +18,8 @@ class Cat implements Comparable<Cat>{
     else    
     return -1;    
     }    
-    }    
+    } 
+    //these are the cat variables
 class test{    
 public static void main(String args[]){    
 ArrayList<Cat> al=new ArrayList<Cat>();    
@@ -31,7 +32,8 @@ al.add(new Cat("Rombus",21));
 al.add(new Cat("Carter",52));   
 al.add(new Cat("Maya",67));   
 al.add(new Cat("Jay",83));   
-al.add(new Cat("lockland",92));      
+al.add(new Cat("lockland",92)); 
+//this will print out the cats sorted by age 
     
 Collections.sort(al);    
 for(Cat st:al){    
