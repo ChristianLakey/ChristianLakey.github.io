@@ -3,22 +3,25 @@ class ArithmeticException_Demo
     public static void main(String args[])
     {
         try {
-            int d = 30, g = 0;
+            int d = 30, g = 0; 
             int c = d/g;  // cannot divide by zero
             System.out.println ("Result = " + c);
+            // ends up not working because computer can not do it
         }
         catch(ArithmeticException e) {
             System.out.println ("It does not work you can not divide by zero");
-            
+            //instead of not working the computer gives a custom error message
         }
         System.out.println ("you hit try again");
         try {
             int a = 20, b = 0;
             int c = a/b;  // cannot divide by zero
             System.out.println ("Result = " + c);
+            //you try again but the computer knows more
         }
         catch(ArithmeticException e) {
             System.out.println ("stop trying it does not work");
+            //so it gives you another error message telling you to stop
             
         }
         System.out.println ("you hit try again");
@@ -26,10 +29,11 @@ class ArithmeticException_Demo
             int m = 30, n = 0;
             int c = m/n;  // cannot divide by zero
             System.out.println ("Result = " + c);
+            //you run it again!
         }
         catch(ArithmeticException e) {
             System.out.println ("I told you once I told you one thousands times your done im shutting down");
-            
+            //The computer is mad now so it now won't do math for you giving you 1 last error message
         }
 
      }
